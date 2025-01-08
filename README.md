@@ -29,7 +29,7 @@ CREATE TABLE usuarios (
 
 ## Rutas de la API
 
-### GET `/api/data`
+### GET `/api/users`
 - **Descripción**: Obtiene todos los registros de la tabla `usuarios`.
 - **URL**: `http://localhost:3000/api/data`
 - **Respuesta**: 
@@ -50,7 +50,7 @@ CREATE TABLE usuarios (
 ]
 ```
 
-### POST `/api/data`
+### POST `/api/users`
 - **Descripción**: Permite agregar nuevos usuarios desde el backend. Esta ruta no es accesible desde el frontend.
 - **URL**: `http://localhost:3000/api/data`
 - **Cuerpo del request**: 
@@ -119,12 +119,12 @@ CREATE TABLE usuarios (
 
 ## Pruebas de la API
 
-1. **GET `/api/data`**: 
+1. **GET `/api/users`**: 
    - Utiliza **Postman** o cualquier cliente HTTP.
-   - Realiza una solicitud GET a `http://localhost:3000/api/data`.
+   - Realiza una solicitud GET a `http://localhost:3000/api/users`.
    - Verifica los datos en formato JSON.
 
-2. **POST `/api/data`**: 
+2. **POST `/api/users`**: 
    - Envía un cuerpo JSON con los datos del nuevo usuario.
    - La respuesta incluirá el usuario creado.
 
